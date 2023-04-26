@@ -57,21 +57,21 @@
     <!-- html 버전 처리 -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
-      <![endif]-->
-      <!-- css 초기화 파일 적용 -->
-      <link rel="stylesheet" href="css/reset.css" />
-      <!-- vender pre fix -->
-      <script src="js/prefixfree.min.js"></script>
-      <!-- response -->
-      <script src="js/respond.min.js"></script>
-      <!-- Link Swiper's CSS -->
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <link
+    <![endif]-->
+    <!-- css 초기화 파일 적용 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- vender pre fix -->
+    <script src="js/prefixfree.min.js"></script>
+    <!-- response -->
+    <script src="js/respond.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-      />
-      <link rel="stylesheet" href="css/style.css" />
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- 플라잉 배너 -->
@@ -123,7 +123,7 @@
                 </li>
               </ul>
               <a href="#" class="mb-mypage">
-                <img src="images/icon_mypage.svg" alt="마이페이지">
+                <img src="images/icon_mypage.svg" alt="마이페이지" />
               </a>
             </div>
           </div>
@@ -170,6 +170,10 @@
       <!-- 추천 이벤트 -->
       <section class="promotion">
         <div class="inner">
+          <div class="section-top">
+            <h2>오늘의 픽</h2>
+            <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+          </div>
           <div class="promotion-slide">
             <button class="sw-bt sw-prev">이전</button>
             <button class="sw-bt sw-next">다음</button>
@@ -213,7 +217,7 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".sw-promotion", {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 24,
           speed: 1000,
           loop: true,
@@ -224,6 +228,11 @@
           navigation: {
             nextEl: ".promotion .sw-next",
             prevEl: ".promotion .sw-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
           },
         });
       </script>
