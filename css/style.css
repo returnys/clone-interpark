@@ -101,7 +101,6 @@ body {
   .sw-bt {
     display: none;
   }
-  
 }
 /* section 내용 구조 */
 .wrap > section {
@@ -766,7 +765,7 @@ body {
 }
 .tour .section-slide {
   position: relative;
-  height: 355px;
+  /* height: 355px; */
 }
 .sw-tour {
   height: 100%;
@@ -782,7 +781,8 @@ body {
 .tour-img {
   position: relative;
   width: 100%;
-  height: 245px;
+  max-height: 245px;
+  height: 19.14vw;
   overflow: hidden;
 }
 .tour-img img {
@@ -791,7 +791,7 @@ body {
   top: 50%;
   left: 50%;
   /* 좌표, 영역말고 내용(보이는 부분)만 이동 */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.3);
   width: 100%;
 }
 .tour-info {
@@ -837,6 +837,33 @@ body {
 .tour-place b {
   font-weight: 700;
   font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .tour-img {
+    /* height: 138px; */
+  }
+  .tour-info {
+    padding: 10px;
+  }
+  .tour-cate {
+    top: -22px;
+    line-height: 22px;
+    padding: 0 7px;
+    border-radius: 4px;
+  }
+  .tour-title {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .tour-price {
+    font-size: 15px;
+  }
+  .tour-price b {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 760px) {
 }
 /* 티켓랭킹 */
 .ticket {
