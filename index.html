@@ -177,6 +177,7 @@
           <div class="promotion-slide">
             <button class="sw-bt sw-prev">이전</button>
             <button class="sw-bt sw-next">다음</button>
+            <!-- promotion Swiper -->
             <div class="swiper sw-promotion">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -211,6 +212,10 @@
                 </div>
               </div>
             </div>
+            <!-- pagination -->
+            <div class="sw-promotion-control">
+              <div class="pagination sw-promotion-pg"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -228,6 +233,10 @@
           navigation: {
             nextEl: ".promotion .sw-next",
             prevEl: ".promotion .sw-prev",
+          },
+          pagination: {
+            el: ".sw-promotion-pg",
+            clickable: true,
           },
           breakpoints: {
             768: {
