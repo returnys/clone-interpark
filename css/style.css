@@ -1241,7 +1241,7 @@ body {
   }
   .live-info-desc {
     float: right;
-    width: 100%
+    width: 100%;
   }
   .live-info-thumb {
     display: none;
@@ -1249,12 +1249,10 @@ body {
 }
 /* 오늘의 도서 */
 .books {
-  padding-top: 30px;
-  padding-bottom: 60px;
 }
 .books .scetion-slide {
   position: relative;
-  height: 400px;
+  /* height: 400px; */
 }
 .sw-books {
   height: 100%;
@@ -1298,6 +1296,40 @@ body {
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
+}
+@media screen and (max-width: 1280px) {
+  .books .section-slide .sw-bt {
+    top: 49%;
+  }
+  .books-img {
+    height: 457px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .books-img {
+    height: 322px;
+  }
+  .books-info-title {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 4px 0;
+  }
+  .books-info-price {
+    font-size: 14px;
+  }
+  .books-info-price em {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .books-img {
+    height: 41.66vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .books-img img {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
 }
 /* 이벤트 */
 .event {
