@@ -841,6 +841,7 @@ body {
 @media screen and (max-width: 1024px) {
   .tour-img {
     /* height: 138px; */
+    height: 10.78vw;
   }
   .tour-info {
     padding: 10px;
@@ -975,10 +976,10 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
-  .ticket .section-slide {
+  /* .ticket .section-slide {
     width: 120%;
     overflow: hidden;
-  }
+  } */
   .ticket-rank {
     left: 12px;
     font-size: 38px;
@@ -986,6 +987,9 @@ body {
   }
   .ticket-img img {
     transform: translate(-50%, -50%) scale(1.4);
+  }
+  .sw-ticket .swiper-slide {
+    width: 150px;
   }
 }
 @media screen and (max-width: 760px) {
