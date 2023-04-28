@@ -1364,6 +1364,11 @@ body {
   width: 100%;
   mix-blend-mode: multiply;
 }
+@media screen and (max-width:1024px) {
+  .event {
+    display: none;
+  }
+}
 /* 하단 */
 .footer {
   padding-top: 30px;
