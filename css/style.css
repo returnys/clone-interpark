@@ -170,7 +170,7 @@ body {
 @media screen and (max-width: 1024px) {
   .wrap > section {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
   .section-top {
   }
@@ -202,8 +202,6 @@ body {
 }
 @media screen and (max-width: 760px) {
   .wrap > section {
-    padding-top: 30px;
-    padding-bottom: 0;
   }
 }
 /* 플라잉 배너 */
@@ -1371,7 +1369,6 @@ body {
 }
 /* 하단 */
 .footer {
-  padding-top: 30px;
 }
 .footer-menu {
   border-top: 1px solid #e5e5e5;
