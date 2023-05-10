@@ -71,6 +71,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <!-- js 파일 로딩 -->
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -259,32 +261,6 @@
           </div>
         </div>
       </section>
-      <!-- Initialize Swiper -->
-      <script>
-        let promotionSwiper = new Swiper(".sw-promotion", {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          speed: 1000,
-          loop: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          navigation: {
-            nextEl: ".promotion .sw-next",
-            prevEl: ".promotion .sw-prev",
-          },
-          pagination: {
-            el: ".sw-promotion-pg",
-            clickable: true,
-          },
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
-            },
-          },
-        });
-      </script>
       <!--// 추천 이벤트 -->
       <!-- 쇼핑추천 -->
       <section class="shopping">
@@ -431,37 +407,6 @@
                 </div>
               </div>
             </div>
-            <!-- Shopping Swiper -->
-            <script>
-              let shoppingSwiper = new Swiper(".sw-shopping", {
-                slidesPerView: 5,
-                spaceBetween: 10,
-                grid: {
-                  rows: 2,
-                  fill: "row",
-                },
-                breakpoints: {
-                  1024: {
-                    spaceBetween: 32,
-                    slidesPerView: 3,
-                    // 화면당 3개씩 슬라이드 이동
-                    slidesPerGroup: 3,
-                    grid: {
-                      rows: 1,
-                    },
-                  },
-                  1280: {
-                    spaceBetween: 26,
-                    slidesPerView: 4,
-                    // 화면당 4개씩 슬라이드 이동
-                    slidesPerGroup: 4,
-                    grid: {
-                      rows: 1,
-                    },
-                  },
-                },
-              });
-            </script>
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">쇼핑 홈 바로가기</a>
@@ -634,36 +579,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              let tourSwiper = new Swiper(".sw-tour", {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                grid: {
-                  rows: 2,
-                  fill: "row",
-                },
-                breakpoints: {
-                  1024: {
-                    spaceBetween: 24,
-                    slidesPerView: 2,
-                    // 화면당 3개씩 슬라이드 이동
-                    slidesPerGroup: 2,
-                    grid: {
-                      rows: 1,
-                    },
-                  },
-                  1280: {
-                    spaceBetween: 26,
-                    slidesPerView: 3,
-                    // 화면당 4개씩 슬라이드 이동
-                    slidesPerGroup: 3,
-                    grid: {
-                      rows: 1,
-                    },
-                  },
-                },
-              });
-            </script>
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">투어 홈 바로가기</a>
@@ -827,22 +742,6 @@
               </div>
             </div>
           </div>
-          <script>
-            let ticketSwiper = new Swiper(".sw-ticket", {
-              slidesPerView: "auto",
-              spaceBetween: 10,
-              breakpoints: {
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 32,
-                },
-                1280: {
-                  slidesPerView: 4,
-                  spaceBetween: 27,
-                },
-              },
-            });
-          </script>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">티켓 홈 바로가기</a>
           </div>
@@ -999,22 +898,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              let liveSwiper = new Swiper(".sw-live", {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                breakpoints: {
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                  },
-                  1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 27,
-                  },
-                },
-              });
-            </script>
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">인터파크 라이브 바로가기</a>
@@ -1154,36 +1037,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              let booksSwiper = new Swiper(".sw-books", {
-                slidesPerView: 3,
-                spaceBetween: 19,
-                grid: {
-                  rows: 4,
-                  fill: "row",
-                },
-                breakpoints: {
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    slidesPerGroup: 3,
-                    grid: {
-                      rows: 1,
-                      fill: "row",
-                    },
-                  },
-                  1280: {
-                    slidesPerView: 5,
-                    spaceBetween: 27,
-                    slidesPerGroup: 5,
-                    grid: {
-                      rows: 1,
-                      fill: "row",
-                    },
-                  },
-                },
-              });
-            </script>
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">도서 홈 바로가기</a>
@@ -1226,18 +1079,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              let eventsSwiper = new Swiper(".sw-events", {
-                slidesPerView: 3,
-                spaceBetween: 27,
-                breakpoints: {
-                  1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 27,
-                  },
-                },
-              });
-            </script>
           </div>
         </div>
       </section>
