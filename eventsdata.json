@@ -1,0 +1,7 @@
+{
+  "good_count": 4,
+  "good_1": { "link": "#", "pic": "banner1.jpg", "alt": "배너" },
+  "good_2": { "link": "#", "pic": "banner2.jpg", "alt": "배너" },
+  "good_3": { "link": "#", "pic": "banner3.jpg", "alt": "배너" },
+  "good_4": { "link": "#", "pic": "banner4.jpg", "alt": "배너" }
+}
