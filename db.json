@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 1685428881171,
+      "title": "새로운 제목 1685428881171",
+      "complete": false
+    },
+    {
+      "id": 1685428882195,
+      "title": "새로운 제목 1685428882195",
+      "complete": false
+    },
+    {
+      "id": 1685428883067,
+      "title": "새로운 제목 1685428883067",
+      "complete": false
+    },
+    {
+      "id": 1685429442491,
+      "title": "새로운 제목 1685429442491",
+      "complete": false
+    },
+    {
+      "id": 1685429445091,
+      "title": "새로운 제목 1685429445091",
+      "complete": false
+    },
+    {
+      "id": 1685429445859,
+      "title": "새로운 제목 1685429445859",
+      "complete": false
+    },
+    {
+      "id": 1685429446682,
+      "title": "새로운 제목 1685429446682",
+      "complete": false
+    },
+    {
+      "id": 1685429447859,
+      "title": "새로운 제목 1685429447859",
+      "complete": false
+    },
+    {
+      "id": 1685429449338,
+      "title": "새로운 제목 1685429449338",
+      "complete": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
