@@ -7,21 +7,14 @@
  */
 window.addEventListener("load", function () {
   // events Swiper
-  let swEventsData;
-  const eventsXhttp = new XMLHttpRequest();
-  eventsXhttp.onreadystatechange = function (event) {
-    let req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      swEventsData = JSON.parse(req.response);
-      makeEventsSlide();
-    }
-  };
-  eventsXhttp.open("GET", "data/eventsdata.json");
-  eventsXhttp.send();
-  function makeEventsSlide() {
+  fetch("data/eventsdata.json")
+    .then((res) => res.json())
+    .then((result) => makeEventsSlide(result))
+    .catch((err) => console.log(err));
+  function makeEventsSlide(_data) {
     let swEventsHtml = ``;
-    for (let i = 0; i < swEventsData.good_count; i++) {
-      let obj = swEventsData[`good_${i + 1}`];
+    for (let i = 0; i < _data.good_count; i++) {
+      let obj = _data[`good_${i + 1}`];
       let temp = `
     <div class="swiper-slide">
       <a href="${obj.link}" class="events-link">
